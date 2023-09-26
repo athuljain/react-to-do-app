@@ -1,0 +1,106 @@
+/* App Container */
+.main-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input Field and Button Container */
+  .input-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .main-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .add-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .add-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Task List */
+  .ul-div {
+    margin-top: 20px;
+  }
+  
+  .ul-tag {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .li-tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Edit and Delete Buttons */
+  .edit-div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .editInput {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .editBtn,
+  .DeleteBtn,
+  .saveBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .editBtn:hover,
+  .DeleteBtn:hover,
+  .saveBtn:hover {
+    background-color: #0056b3;
+  }
+  
