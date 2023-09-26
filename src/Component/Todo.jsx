@@ -25,13 +25,47 @@ function AddTask(){
             </div>
 
 <div>
+
+
+
     <ul>
-        {task.map((data,index)=>
-        <li key={index}>
-            {data} 
-            <button>edit</button>
-            
-        </li>)}
+
+        
+    {task.map((data, index) => (
+    <li key={index}>
+        {editIndex === index ? (
+            <div>
+                <input
+                    type="text"
+                    value={data}
+                    onChange={(e) => {
+                        const updatedTaskList = [...task];
+                        updatedTaskList[index] = e.target.value;
+                        setTask(updatedTaskList);
+                    }}
+                />
+                <button
+                    onClick={() => {
+                        setEditIndex(-1); // Exit edit mode
+                    }}
+                >
+                    Save
+                </button>
+            </div>
+        ) : (
+            <div>
+                {data}
+                <button
+                    onClick={() => {
+                        setEditIndex(index); // Enter edit mode
+                    }}
+                >
+                    Edit
+                </button>
+            </div>
+        )}
+    </li>
+))}
     </ul>
 </div>
 
