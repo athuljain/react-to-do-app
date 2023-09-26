@@ -11,7 +11,22 @@ export default function Todo(){
 
 
 function AddTask(){
-    setTask([...task,inputTask])
+
+    if(inputTask.trim() !== ""){  //check the input filed if any value is in input filed
+        setTask([...task,inputTask])
+        setInputTask("") // clear input after adding task
+
+    }
+
+
+
+   
+}
+
+function DeleteTask(index){
+    const updatedTaskList=[...task]
+    updatedTaskList.splice(index,1) // delete the specific task
+    setTask(updatedTaskList)
 }
     
 
@@ -30,7 +45,7 @@ function AddTask(){
 
     <ul>
 
-        
+
     {task.map((data, index) => (
     <li key={index}>
         {editIndex === index ? (
@@ -62,6 +77,9 @@ function AddTask(){
                 >
                     Edit
                 </button>
+
+                    <button onClick={()=>DeleteTask(index)}>Delete</button>
+
             </div>
         )}
     </li>
