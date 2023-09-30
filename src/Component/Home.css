@@ -1,0 +1,29 @@
+.HomePageContainer {
+    background: linear-gradient(to bottom, #4CAF50, #2196F3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust the height to make it cover the full viewport height */
+    color: #fff;
+    text-align: center;
+  }
+  
+  .H1HomePage {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .ToDoBtn {
+    background-color: #FF5722;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .ToDoBtn:hover {
+    background-color: #E64A19; /* Change the button color on hover */
+  }
+  
